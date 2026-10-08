@@ -1,0 +1,57 @@
+[
+  {
+    "hour_utc": "2022-11-01T23:00:00+00:00",
+    "overlap_ticks": 38,
+    "preboundary_ticks": 12,
+    "overlap_last_msc": 1667347199274,
+    "overlap_last_bid": 0.98773,
+    "archive_last_msc": 1667347196033,
+    "archive_last_bid": 0.98775,
+    "overlap_finds_later_tick": true,
+    "reference_close_matches_overlap": true
+  },
+  {
+    "hour_utc": "2022-11-28T23:00:00+00:00",
+    "overlap_ticks": 40,
+    "preboundary_ticks": 13,
+    "overlap_last_msc": 1669679999421,
+    "overlap_last_bid": 1.03436,
+    "archive_last_msc": 1669679998143,
+    "archive_last_bid": 1.03434,
+    "overlap_finds_later_tick": true,
+    "reference_close_matches_overlap": true
+  },
+  {
+    "hour_utc": "2022-12-11T23:00:00+00:00",
+    "overlap_ticks": 16,
+    "preboundary_ticks": 4,
+    "overlap_last_msc": 1670803199035,
+    "overlap_last_bid": 1.05209,
+    "archive_last_msc": 1670803198828,
+    "archive_last_bid": 1.05213,
+    "overlap_finds_later_tick": true,
+    "reference_close_matches_overlap": true
+  },
+  {
+    "hour_utc": "2022-12-13T23:00:00+00:00",
+    "overlap_ticks": 26,
+    "preboundary_ticks": 5,
+    "overlap_last_msc": 1670975999877,
+    "overlap_last_bid": 1.06244,
+    "archive_last_msc": 1670975991866,
+    "archive_last_bid": 1.06246,
+    "overlap_finds_later_tick": true,
+    "reference_close_matches_overlap": true
+  },
+  {
+    "hour_utc": "2023-01-15T23:00:00+00:00",
+    "overlap_ticks": 32,
+    "preboundary_ticks": 8,
+    "overlap_last_msc": 1673827199198,
+    "overlap_last_bid": 1.08227,
+    "archive_last_msc": 1673827198573,
+    "archive_last_bid": 1.08223,
+    "overlap_finds_later_tick": true,
+    "reference_close_matches_overlap": true
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "OOS_evaluated": false,
+  "purpose": "six technical pilot replays, not economic evidence",
+  "results": [
+    {
+      "split": "TRAIN",
+      "model": "momentum_12",
+      "selection": "first chronological trade, regardless of outcome",
+      "old_OHLC_R": -1.005256735191958,
+      "levels": "original requested SL/TP unchanged; market entry uses actual quote; actual entry-to-SL defines R",
+      "costs": "one point adverse market/stop slippage and one point hypothetical round-trip commission; tariff unverified",
+      "tick_replay": {
+        "entry_time_msc": 1667336400324,
+        "exit_time_msc": 1667395233152,
+        "direction": -1,
+        "entry": 0.98768,
+        "stop": 0.9914846428571429,
+        "target": 0.9800707142857142,
+        "exit": 0.9915299999999999,
+        "exit_quote": 0.99152,
+        "reason": "stop",
+        "initial_risk_price": 0.0038046428571428814,
+        "R": -1.0145498920491576,
+        "entry_delay_msc": 324,
+        "exit_spread_price": 0.0,
+        "stop_overshoot_price": 3.535714285707314e-05
+      }
+    },
+    {
+      "split": "TRAIN",
+      "model": "range_breakout_20",
+      "selection": "first chronological trade, regardless of outcome",
+      "old_OHLC_R": 1.99575371549896,
+      "levels": "original requested SL/TP unchanged; market entry uses actual quote; actual entry-to-SL defines R",
+      "costs": "one point adverse market/stop slippage and one point hypothetical round-trip commission; tariff unverified",
+      "tick_replay": {
+        "entry_time_msc": 1667419200004,
+        "exit_time_msc": 1667471877710,
+        "direction": -1,
+        "entry": 0.9828600000000001,
+        "stop": 0.9875700000000001,
+        "target": 0.9734400000000001,
+        "exit": 0.9734400000000001,
+        "exit_quote": 0.97343,
+        "reason": "target",
+        "initial_risk_price": 0.004709999999999992,
+        "R": 1.9978768577494692,
+        "entry_delay_msc": 4,
+        "exit_spread_price": 0.0,
+        "stop_overshoot_price": 0.0
+      }
+    },
+    {
+      "split": "TRAIN",
+      "model": "failed_breakout_20",
+      "selection": "first chronological trade, regardless of outcome",
+      "old_OHLC_R": -1.0080983369486327,
+      "levels": "original requested SL/TP unchanged; market entry uses actual quote; actual entry-to-SL defines R",
+      "costs": "one point adverse market/stop slippage and one point hypothetical round-trip commission; tariff unverified",
+      "tick_replay": {
+        "entry_time_msc": 1667397600025,
+        "exit_time_msc": 1667412049754,
+        "direction": -1,
+        "entry": 0.98945,
+        "stop": 0.9919196428571428,
+        "target": 0.9845107142857144,
+        "exit": 0.9919399999999999,
+        "exit_quote": 0.99193,
+        "reason": "stop",
+        "initial_risk_price": 0.0024696428571427953,
+        "R": -1.0122921185827682,
+        "entry_delay_msc": 25,
+        "exit_spread_price": 9.99999999995449e-06,
+        "stop_overshoot_price": 1.0357142857131407e-05
+      }
+    },
+    {
+      "split": "VALIDATION",
+      "model": "momentum_12",
+      "selection": "first chronological trade, regardless of outcome",
+      "old_OHLC_R": -0.015787099684270736,
+      "levels": "original requested SL/TP unchanged; market entry uses actual quote; actual entry-to-SL defines R",
+      "costs": "one point adverse market/stop slippage and one point hypothetical round-trip commission; tariff unverified",
+      "tick_replay": {
+        "entry_time_msc": 1746550800013,
+        "exit_time_msc": 1746637200065,
+        "direction": 1,
+        "entry": 1.1349,
+        "stop": 1.131732857142857,
+        "target": 1.1412342857142856,
+        "exit": 1.1348699999999998,
+        "exit_quote": 1.1348799999999999,
+        "reason": "time",
+        "initial_risk_price": 0.003167142857142924,
+        "R": -0.012629679747468193,
+        "entry_delay_msc": 13,
+        "exit_spread_price": 2.0000000000131024e-05,
+        "stop_overshoot_price": 0.0
+      }
+    },
+    {
+      "split": "VALIDATION",
+      "model": "range_breakout_20",
+      "selection": "first chronological trade, regardless of outcome",
+      "old_OHLC_R": -1.006062574428971,
+      "levels": "original requested SL/TP unchanged; market entry uses actual quote; actual entry-to-SL defines R",
+      "costs": "one point adverse market/stop slippage and one point hypothetical round-trip commission; tariff unverified",
+      "tick_replay": {
+        "entry_time_msc": 1746558000099,
+        "exit_time_msc": 1746569304913,
+        "direction": 1,
+        "entry": 1.13715,
+        "stop": 1.1338510714285712,
+        "target": 1.143747857142857,
+        "exit": 1.13375,
+        "exit_quote": 1.13376,
+        "reason": "stop",
+        "initial_risk_price": 0.003298928571428883,
+        "R": -1.033668940132001,
+        "entry_delay_msc": 99,
+        "exit_spread_price": 8.999999999992347e-05,
+        "stop_overshoot_price": 9.107142857112116e-05
+      }
+    },
+    {
+      "split": "VALIDATION",
+      "model": "failed_breakout_20",
+      "selection": "first chronological trade, regardless of outcome",
+      "old_OHLC_R": 0.7480211081794212,
+      "levels": "original requested SL/TP unchanged; market entry uses actual quote; actual entry-to-SL defines R",
+      "costs": "one point adverse market/stop slippage and one point hypothetical round-trip commission; tariff unverified",
+      "tick_replay": {
+        "entry_time_msc": 1746554400061,
+        "exit_time_msc": 1746640800021,
+        "direction": -1,
+        "entry": 1.13644,
+        "stop": 1.1396885714285714,
+        "target": 1.1299428571428571,
+        "exit": 1.13433,
+        "exit_quote": 1.13432,
+        "reason": "time",
+        "initial_risk_price": 0.0032485714285714895,
+        "R": 0.646437994722892,
+        "entry_delay_msc": 61,
+        "exit_spread_price": 0.00034000000000000696,
+        "stop_overshoot_price": 0.0
+      }
+    }
+  ]
+}

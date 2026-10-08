@@ -1,0 +1,163 @@
+{
+  "created_utc": "2026-09-30T13:27:37.074756+00:00",
+  "OOS_outcomes_evaluated": false,
+  "candles": {
+    "D1_preOOS.npy": {
+      "preOOS_rows": 995,
+      "duplicate_times": 0,
+      "nonincreasing_times": 0,
+      "invalid_ohlc": 0,
+      "gaps_above_nominal": 166,
+      "gap_note": "Includes normal market closures; not automatically missing data",
+      "zero_spread_rows": 668,
+      "start_utc": "2022-11-01T00:00:00+00:00",
+      "end_utc": "2026-01-08T00:00:00+00:00"
+    },
+    "H1.npy": {
+      "preOOS_rows": 95470,
+      "duplicate_times": 0,
+      "nonincreasing_times": 0,
+      "invalid_ohlc": 0,
+      "gaps_above_nominal": 824,
+      "gap_note": "Includes normal market closures; not automatically missing data",
+      "zero_spread_rows": 27119,
+      "start_utc": "2010-08-20T21:00:00+00:00",
+      "end_utc": "2026-01-08T20:00:00+00:00"
+    },
+    "H4_preOOS.npy": {
+      "preOOS_rows": 5125,
+      "duplicate_times": 0,
+      "nonincreasing_times": 0,
+      "invalid_ohlc": 0,
+      "gaps_above_nominal": 170,
+      "gap_note": "Includes normal market closures; not automatically missing data",
+      "zero_spread_rows": 3340,
+      "start_utc": "2022-11-01T00:00:00+00:00",
+      "end_utc": "2026-01-08T20:00:00+00:00"
+    },
+    "M1.npy": {
+      "preOOS_rows": 0
+    },
+    "M15.npy": {
+      "preOOS_rows": 81883,
+      "duplicate_times": 0,
+      "nonincreasing_times": 0,
+      "invalid_ohlc": 0,
+      "gaps_above_nominal": 177,
+      "gap_note": "Includes normal market closures; not automatically missing data",
+      "zero_spread_rows": 45860,
+      "start_utc": "2022-09-22T17:30:00+00:00",
+      "end_utc": "2026-01-08T20:45:00+00:00"
+    },
+    "M5.npy": {
+      "preOOS_rows": 45768,
+      "duplicate_times": 0,
+      "nonincreasing_times": 0,
+      "invalid_ohlc": 0,
+      "gaps_above_nominal": 38,
+      "gap_note": "Includes normal market closures; not automatically missing data",
+      "zero_spread_rows": 15,
+      "start_utc": "2025-05-28T14:00:00+00:00",
+      "end_utc": "2026-01-08T20:55:00+00:00"
+    }
+  },
+  "history_requests": {
+    "H4": {
+      "rows": 5125,
+      "filename": "H4_preOOS.npy"
+    },
+    "D1": {
+      "rows": 995,
+      "filename": "D1_preOOS.npy"
+    }
+  },
+  "tick_probes": [
+    {
+      "start_utc": "2022-11-08T12:00:00+00:00",
+      "end_utc": "2022-11-08T12:15:00+00:00",
+      "rows": 1090,
+      "invalid_quotes": 0,
+      "first_tick_utc": "2022-11-08T12:00:00+00:00",
+      "last_tick_utc": "2022-11-08T12:14:59+00:00",
+      "spread_points_quantiles": [
+        0.0,
+        0.9999999999954489,
+        1.0000000000065512,
+        2.000000000002
+      ]
+    },
+    {
+      "start_utc": "2023-06-06T12:00:00+00:00",
+      "end_utc": "2023-06-06T12:15:00+00:00",
+      "rows": 917,
+      "invalid_quotes": 0,
+      "first_tick_utc": "2023-06-06T12:00:00+00:00",
+      "last_tick_utc": "2023-06-06T12:14:58+00:00",
+      "spread_points_quantiles": [
+        1.0000000000065512,
+        2.0000000000131024,
+        2.0000000000131024,
+        2.9999999999974487
+      ]
+    },
+    {
+      "start_utc": "2024-06-04T12:00:00+00:00",
+      "end_utc": "2024-06-04T12:15:00+00:00",
+      "rows": 1659,
+      "invalid_quotes": 0,
+      "first_tick_utc": "2024-06-04T12:00:00+00:00",
+      "last_tick_utc": "2024-06-04T12:14:59+00:00",
+      "spread_points_quantiles": [
+        0.0,
+        1.0000000000065512,
+        2.0000000000131024,
+        2.0000000000131024
+      ]
+    },
+    {
+      "start_utc": "2025-06-03T12:00:00+00:00",
+      "end_utc": "2025-06-03T12:15:00+00:00",
+      "rows": 1232,
+      "invalid_quotes": 0,
+      "first_tick_utc": "2025-06-03T12:00:00+00:00",
+      "last_tick_utc": "2025-06-03T12:14:59+00:00",
+      "spread_points_quantiles": [
+        1.9999999999908977,
+        2.0000000000131024,
+        2.0000000000131024,
+        2.0000000000131024
+      ]
+    },
+    {
+      "start_utc": "2025-12-02T12:00:00+00:00",
+      "end_utc": "2025-12-02T12:15:00+00:00",
+      "rows": 622,
+      "invalid_quotes": 0,
+      "first_tick_utc": "2025-12-02T12:00:00+00:00",
+      "last_tick_utc": "2025-12-02T12:14:59+00:00",
+      "spread_points_quantiles": [
+        2.0000000000131024,
+        2.9999999999974487,
+        4.000000000004,
+        5.000000000010552
+      ]
+    }
+  ],
+  "symbol_properties": {
+    "digits": 5,
+    "point": 1e-05,
+    "trade_tick_size": 1e-05,
+    "trade_tick_value": 1.0,
+    "trade_contract_size": 100000.0,
+    "volume_min": 0.01,
+    "volume_max": 20.0,
+    "volume_step": 0.01,
+    "trade_stops_level": 20,
+    "spread": 11,
+    "swap_mode": 1,
+    "swap_long": -11.42,
+    "swap_short": 2.66,
+    "swap_rollover3days": 3
+  },
+  "commission": "Not established from symbol properties; actual account tariff required"
+}

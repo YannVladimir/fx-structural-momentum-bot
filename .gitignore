@@ -1,0 +1,13 @@
+# Large data/research folders (kept local only)
+/raw_data/
+/archive/
+/CRT_research/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db

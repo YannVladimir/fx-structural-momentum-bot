@@ -1,0 +1,27 @@
+{
+  "status": "PRELIMINARY OHLC SCREEN; NOT EXECUTION VALIDATED",
+  "splits": {
+    "symbol_tag": "EURUSD",
+    "n_bars_used_for_split": 24023,
+    "train_start": "2022-11-01 00:00:00",
+    "train_end": "2025-05-06 15:00:00",
+    "val_start": "2025-05-06 16:00:00",
+    "val_end": "2026-01-08 20:00:00",
+    "oos_start": "2026-01-08 21:00:00",
+    "oos_end": "2026-09-11 00:00:00"
+  },
+  "models": [
+    "momentum_12",
+    "range_breakout_20",
+    "failed_breakout_20"
+  ],
+  "stop": "SMA true range 14 * 1.5, calculated at signal close",
+  "target": "2 initial stop distances",
+  "entry": "next H1 open; long ask, short bid",
+  "exit": "long bid / short ask; first opening gap then intrabar barriers; both touched means stop first",
+  "holding_limit": "24 H1 bars, or last available bar before split end",
+  "costs": "historical bar spread; zero/missing spread replaced by 11 points; 1 USD per 100k currency units round-trip commission allowance",
+  "stress": "1x spread + 1 point per fill; 1.5x + 2; 2x + 3",
+  "constraints": "one position, no averaging, no sizing changes, no optimization; gaps filled at worse opening quote",
+  "limitations": "OHLC cannot reveal true stop blow-through, changing intrabar spread, or tick order; no economic validation claimed"
+}

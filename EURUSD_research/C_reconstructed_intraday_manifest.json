@@ -1,0 +1,76 @@
+{
+  "OOS_evaluated": false,
+  "scope": "five fixed historical days, not continuous history",
+  "samples": [
+    {
+      "source": "ticks_day_2022-11-08.npy",
+      "timeframe": "M1",
+      "bars": 1439,
+      "missing_clock_buckets_in_day": 1,
+      "output": "M1_from_ticks_day_2022-11-08.npy"
+    },
+    {
+      "source": "ticks_day_2022-11-08.npy",
+      "timeframe": "M5",
+      "bars": 288,
+      "missing_clock_buckets_in_day": 0,
+      "output": "M5_from_ticks_day_2022-11-08.npy"
+    },
+    {
+      "source": "ticks_day_2023-06-06.npy",
+      "timeframe": "M1",
+      "bars": 1440,
+      "missing_clock_buckets_in_day": 0,
+      "output": "M1_from_ticks_day_2023-06-06.npy"
+    },
+    {
+      "source": "ticks_day_2023-06-06.npy",
+      "timeframe": "M5",
+      "bars": 288,
+      "missing_clock_buckets_in_day": 0,
+      "output": "M5_from_ticks_day_2023-06-06.npy"
+    },
+    {
+      "source": "ticks_day_2024-06-04.npy",
+      "timeframe": "M1",
+      "bars": 1440,
+      "missing_clock_buckets_in_day": 0,
+      "output": "M1_from_ticks_day_2024-06-04.npy"
+    },
+    {
+      "source": "ticks_day_2024-06-04.npy",
+      "timeframe": "M5",
+      "bars": 288,
+      "missing_clock_buckets_in_day": 0,
+      "output": "M5_from_ticks_day_2024-06-04.npy"
+    },
+    {
+      "source": "ticks_day_2025-06-03.npy",
+      "timeframe": "M1",
+      "bars": 1439,
+      "missing_clock_buckets_in_day": 1,
+      "output": "M1_from_ticks_day_2025-06-03.npy"
+    },
+    {
+      "source": "ticks_day_2025-06-03.npy",
+      "timeframe": "M5",
+      "bars": 288,
+      "missing_clock_buckets_in_day": 0,
+      "output": "M5_from_ticks_day_2025-06-03.npy"
+    },
+    {
+      "source": "ticks_day_2025-12-02.npy",
+      "timeframe": "M1",
+      "bars": 1438,
+      "missing_clock_buckets_in_day": 2,
+      "output": "M1_from_ticks_day_2025-12-02.npy"
+    },
+    {
+      "source": "ticks_day_2025-12-02.npy",
+      "timeframe": "M5",
+      "bars": 288,
+      "missing_clock_buckets_in_day": 0,
+      "output": "M5_from_ticks_day_2025-12-02.npy"
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "protocol": {
+    "status": "PRELIMINARY OHLC SCREEN; NOT EXECUTION VALIDATED",
+    "splits": {
+      "symbol_tag": "EURUSD",
+      "n_bars_used_for_split": 24023,
+      "train_start": "2022-11-01 00:00:00",
+      "train_end": "2025-05-06 15:00:00",
+      "val_start": "2025-05-06 16:00:00",
+      "val_end": "2026-01-08 20:00:00",
+      "oos_start": "2026-01-08 21:00:00",
+      "oos_end": "2026-09-11 00:00:00"
+    },
+    "models": [
+      "momentum_12",
+      "range_breakout_20",
+      "failed_breakout_20"
+    ],
+    "stop": "SMA true range 14 * 1.5, calculated at signal close",
+    "target": "2 initial stop distances",
+    "entry": "next H1 open; long ask, short bid",
+    "exit": "long bid / short ask; first opening gap then intrabar barriers; both touched means stop first",
+    "holding_limit": "24 H1 bars, or last available bar before split end",
+    "costs": "historical bar spread; zero/missing spread replaced by 11 points; 1 USD per 100k currency units round-trip commission allowance",
+    "stress": "1x spread + 1 point per fill; 1.5x + 2; 2x + 3",
+    "constraints": "one position, no averaging, no sizing changes, no optimization; gaps filled at worse opening quote",
+    "limitations": "OHLC cannot reveal true stop blow-through, changing intrabar spread, or tick order; no economic validation claimed"
+  },
+  "data_rows_train_validation": 19818,
+  "duplicates": 0,
+  "invalid_ohlc": 0,
+  "results": [
+    {
+      "split": "TRAIN",
+      "model": "momentum_12",
+      "spread_multiplier": 1.0,
+      "slippage_points_each_fill": 1,
+      "trades": 1344,
+      "win_rate": 0.3482142857142857,
+      "expectancy_R": -0.06229758827914587,
+      "profit_factor": 0.902407651303944,
+      "total_R": -83.72795864717204,
+      "max_drawdown_R": 109.43911826074999,
+      "average_win_R": 1.654290016154975,
+      "average_loss_R": -0.9793786372234022,
+      "worst_R": -1.663014133714548,
+      "max_consecutive_losses": 14,
+      "block_bootstrap_mean_CI95": [
+        -0.12943079735640012,
+        0.0021493738155478823
+      ],
+      "average_holding_hours": 15.030505952380953
+    },
+    {
+      "split": "TRAIN",
+      "model": "momentum_12",
+      "spread_multiplier": 1.5,
+      "slippage_points_each_fill": 2,
+      "trades": 1369,
+      "win_rate": 0.3338203067932798,
+      "expectancy_R": -0.10651222541522111,
+      "profit_factor": 0.8381643689723157,
+      "total_R": -145.8152365934377,
+      "max_drawdown_R": 168.4385659928439,
+      "average_win_R": 1.6525010949464007,
+      "average_loss_R": -0.9879476282718672,
+      "worst_R": -1.6896935048434367,
+      "max_consecutive_losses": 15,
+      "block_bootstrap_mean_CI95": [
+        -0.17514388687567264,
+        -0.03532460276381838
+      ],
+      "average_holding_hours": 14.755295836376918
+    },
+    {
+      "split": "TRAIN",
+      "model": "momentum_12",
+      "spread_multiplier": 2.0,
+      "slippage_points_each_fill": 3,
+      "trades": 1387,
+      "win_rate": 0.32660418168709443,
+      "expectancy_R": -0.13435632597910543,
+      "profit_factor": 0.7996257228070042,
+      "total_R": -186.35222413301923,
+      "max_drawdown_R": 207.32609002623985,
+      "average_win_R": 1.6416522491392267,
+      "average_loss_R": -0.9957394999926006,
+      "worst_R": -1.7163728759726216,
+      "max_consecutive_losses": 15,
+      "block_bootstrap_mean_CI95": [
+        -0.1999158436819051,
+        -0.07199331052269414
+      ],
+      "average_holding_hours": 14.550108147080028
+    },
+    {
+      "split": "TRAIN",
+      "model": "range_breakout_20",
+      "spread_multiplier": 1.0,
+      "slippage_points_each_fill": 1,
+      "trades": 730,
+      "win_rate": 0.31917808219178084,
+      "expectancy_R": -0.09361289363240369,
+      "profit_factor": 0.8593671395179252,
+      "total_R": -68.33741235165469,
+      "max_drawdown_R": 77.71860516937697,
+      "average_win_R": 1.7922332967301458,
+      "average_loss_R": -0.9777218722128345,
+      "worst_R": -1.9109792284867222,
+      "max_consecutive_losses": 19,
+      "block_bootstrap_mean_CI95": [
+        -0.1912878942752939,
+        0.00165895127558539
+      ],
+      "average_holding_hours": 12.621917808219179
+    },
+    {
+      "split": "TRAIN",
+      "model": "range_breakout_20",
+      "spread_multiplier": 1.5,
+      "slippage_points_each_fill": 2,
+      "trades": 739,
+      "win_rate": 0.3071718538565629,
+      "expectancy_R": -0.13253841601621852,
+      "profit_factor": 0.806230999066428,
+      "total_R": -97.94588943598549,
+      "max_drawdown_R": 106.89476239286255,
+      "average_win_R": 1.7952938766286635,
+      "average_loss_R": -0.9872609363880704,
+      "worst_R": -1.938674579623981,
+      "max_consecutive_losses": 19,
+      "block_bootstrap_mean_CI95": [
+        -0.23103823967380765,
+        -0.038247207066568194
+      ],
+      "average_holding_hours": 12.263870094722598
+    },
+    {
+      "split": "TRAIN",
+      "model": "range_breakout_20",
+      "spread_multiplier": 2.0,
+      "slippage_points_each_fill": 3,
+      "trades": 743,
+      "win_rate": 0.29475100942126514,
+      "expectancy_R": -0.17645139918039865,
+      "profit_factor": 0.74895894175939,
+      "total_R": -131.1033895910362,
+      "max_drawdown_R": 137.673828365285,
+      "average_win_R": 1.7860065963720597,
+      "average_loss_R": -0.9966389965582391,
+      "worst_R": -1.9663699307615476,
+      "max_consecutive_losses": 19,
+      "block_bootstrap_mean_CI95": [
+        -0.2703925064898466,
+        -0.08053451481352086
+      ],
+      "average_holding_hours": 12.096904441453567
+    },
+    {
+      "split": "TRAIN",
+      "model": "failed_breakout_20",
+      "spread_multiplier": 1.0,
+      "slippage_points_each_fill": 1,
+      "trades": 835,
+      "win_rate": 0.3377245508982036,
+      "expectancy_R": -0.0849218749835213,
+      "profit_factor": 0.8700623836877408,
+      "total_R": -70.90976561124029,
+      "max_drawdown_R": 93.60429722395376,
+      "average_win_R": 1.6837299565875847,
+      "average_loss_R": -0.986838360522494,
+      "worst_R": -1.9533775735920398,
+      "max_consecutive_losses": 14,
+      "block_bootstrap_mean_CI95": [
+        -0.17187053266408697,
+        -0.005969798297365474
+      ],
+      "average_holding_hours": 14.149700598802395
+    },
+    {
+      "split": "TRAIN",
+      "model": "failed_breakout_20",
+      "spread_multiplier": 1.5,
+      "slippage_points_each_fill": 2,
+      "trades": 848,
+      "win_rate": 0.33372641509433965,
+      "expectancy_R": -0.10432117471126864,
+      "profit_factor": 0.8425323542918443,
+      "total_R": -88.46435615515581,
+      "max_drawdown_R": 111.1058550480237,
+      "average_win_R": 1.6725424085063467,
+      "average_loss_R": -0.9943254119689414,
+      "worst_R": -1.9891100901819478,
+      "max_consecutive_losses": 14,
+      "block_bootstrap_mean_CI95": [
+        -0.19103905711320784,
+        -0.023417663851036816
+      ],
+      "average_holding_hours": 13.955188679245284
+    },
+    {
+      "split": "TRAIN",
+      "model": "failed_breakout_20",
+      "spread_multiplier": 2.0,
+      "slippage_points_each_fill": 3,
+      "trades": 850,
+      "win_rate": 0.31529411764705884,
+      "expectancy_R": -0.16195142714823058,
+      "profit_factor": 0.7645606101980326,
+      "total_R": -137.658713075996,
+      "max_drawdown_R": 158.58131411666537,
+      "average_win_R": 1.6680217421617105,
+      "average_loss_R": -1.0046194844937018,
+      "worst_R": -2.024842606772173,
+      "max_consecutive_losses": 14,
+      "block_bootstrap_mean_CI95": [
+        -0.24607182475160727,
+        -0.08089542845958905
+      ],
+      "average_holding_hours": 13.796470588235294
+    },
+    {
+      "split": "VALIDATION",
+      "model": "momentum_12",
+      "spread_multiplier": 1.0,
+      "slippage_points_each_fill": 1,
+      "trades": 341,
+      "win_rate": 0.36656891495601174,
+      "expectancy_R": -0.04373634869106273,
+      "profit_factor": 0.9305447035951026,
+      "total_R": -14.91409490365239,
+      "max_drawdown_R": 21.342197531992067,
+      "average_win_R": 1.5985225305904658,
+      "average_loss_R": -0.9941176445715769,
+      "worst_R": -3.3783515392254295,
+      "max_consecutive_losses": 11,
+      "block_bootstrap_mean_CI95": [
+        -0.1398016985427157,
+        0.058478007613936
+      ],
+      "average_holding_hours": 16.255131964809383
+    },
+    {
+      "split": "VALIDATION",
+      "model": "momentum_12",
+      "spread_multiplier": 1.5,
+      "slippage_points_each_fill": 2,
+      "trades": 346,
+      "win_rate": 0.3670520231213873,
+      "expectancy_R": -0.0498088716402571,
+      "profit_factor": 0.921686346925318,
+      "total_R": -17.233869587528957,
+      "max_drawdown_R": 21.81208177205579,
+      "average_win_R": 1.5970729451715502,
+      "average_loss_R": -1.0048499252251863,
+      "worst_R": -3.392254220456695,
+      "max_consecutive_losses": 9,
+      "block_bootstrap_mean_CI95": [
+        -0.14541607546793225,
+        0.056202387084848204
+      ],
+      "average_holding_hours": 15.867052023121387
+    },
+    {
+      "split": "VALIDATION",
+      "model": "momentum_12",
+      "spread_multiplier": 2.0,
+      "slippage_points_each_fill": 3,
+      "trades": 346,
+      "win_rate": 0.36127167630057805,
+      "expectancy_R": -0.06515601535476265,
+      "profit_factor": 0.898657571012336,
+      "total_R": -22.543981312747878,
+      "max_drawdown_R": 26.925222868637064,
+      "average_win_R": 1.5992764088910978,
+      "average_loss_R": -1.0065770697924667,
+      "worst_R": -3.4061569016881665,
+      "max_consecutive_losses": 9,
+      "block_bootstrap_mean_CI95": [
+        -0.16205497556915058,
+        0.03630544489188736
+      ],
+      "average_holding_hours": 15.867052023121387
+    },
+    {
+      "split": "VALIDATION",
+      "model": "range_breakout_20",
+      "spread_multiplier": 1.0,
+      "slippage_points_each_fill": 1,
+      "trades": 190,
+      "win_rate": 0.3473684210526316,
+      "expectancy_R": -0.09565508705450397,
+      "profit_factor": 0.8516837723438874,
+      "total_R": -18.174466540355755,
+      "max_drawdown_R": 24.04583025667271,
+      "average_win_R": 1.5812751218619865,
+      "average_loss_R": -0.9882147143810232,
+      "worst_R": -1.0244648318043144,
+      "max_consecutive_losses": 9,
+      "block_bootstrap_mean_CI95": [
+        -0.24826539414944027,
+        0.055766338428671194
+      ],
+      "average_holding_hours": 13.042105263157895
+    },
+    {
+      "split": "VALIDATION",
+      "model": "range_breakout_20",
+      "spread_multiplier": 1.5,
+      "slippage_points_each_fill": 2,
+      "trades": 191,
+      "win_rate": 0.34554973821989526,
+      "expectancy_R": -0.11365206151184806,
+      "profit_factor": 0.8253191072158237,
+      "total_R": -21.70754374876298,
+      "max_drawdown_R": 26.09543007092541,
+      "average_win_R": 1.5539722037786048,
+      "average_loss_R": -0.994157673585207,
+      "worst_R": -1.0366972477062641,
+      "max_consecutive_losses": 9,
+      "block_bootstrap_mean_CI95": [
+        -0.25357369643569816,
+        0.02911566483680298
+      ],
+      "average_holding_hours": 12.774869109947645
+    },
+    {
+      "split": "VALIDATION",
+      "model": "range_breakout_20",
+      "spread_multiplier": 2.0,
+      "slippage_points_each_fill": 3,
+      "trades": 191,
+      "win_rate": 0.34554973821989526,
+      "expectancy_R": -0.1201267911176354,
+      "profit_factor": 0.8164194754533507,
+      "total_R": -22.94421710346836,
+      "max_drawdown_R": 27.125996311287523,
+      "average_win_R": 1.5460233808437955,
+      "average_loss_R": -0.9998540819132706,
+      "worst_R": -1.0489296636084857,
+      "max_consecutive_losses": 9,
+      "block_bootstrap_mean_CI95": [
+        -0.2598899981728707,
+        0.02250947066633582
+      ],
+      "average_holding_hours": 12.408376963350785
+    },
+    {
+      "split": "VALIDATION",
+      "model": "failed_breakout_20",
+      "spread_multiplier": 1.0,
+      "slippage_points_each_fill": 1,
+      "trades": 225,
+      "win_rate": 0.3422222222222222,
+      "expectancy_R": -0.08699475230050509,
+      "profit_factor": 0.8617702268885369,
+      "total_R": -19.573819267613644,
+      "max_drawdown_R": 32.28535762526399,
+      "average_win_R": 1.5848010100295566,
+      "average_loss_R": -0.956780385404659,
+      "worst_R": -1.0250223413763595,
+      "max_consecutive_losses": 14,
+      "block_bootstrap_mean_CI95": [
+        -0.21611782744965796,
+        0.05387980509278413
+      ],
+      "average_holding_hours": 14.906666666666666
+    },
+    {
+      "split": "VALIDATION",
+      "model": "failed_breakout_20",
+      "spread_multiplier": 1.5,
+      "slippage_points_each_fill": 2,
+      "trades": 226,
+      "win_rate": 0.336283185840708,
+      "expectancy_R": -0.11094251378813484,
+      "profit_factor": 0.8265338257224519,
+      "total_R": -25.073008116118473,
+      "max_drawdown_R": 37.141720730020346,
+      "average_win_R": 1.5719498269616023,
+      "average_loss_R": -0.9636079664346683,
+      "worst_R": -1.0375335120642777,
+      "max_consecutive_losses": 14,
+      "block_bootstrap_mean_CI95": [
+        -0.2364272972109549,
+        0.02903416879558056
+      ],
+      "average_holding_hours": 14.809734513274336
+    },
+    {
+      "split": "VALIDATION",
+      "model": "failed_breakout_20",
+      "spread_multiplier": 2.0,
+      "slippage_points_each_fill": 3,
+      "trades": 225,
+      "win_rate": 0.3288888888888889,
+      "expectancy_R": -0.14435338939932782,
+      "profit_factor": 0.7796803659586204,
+      "total_R": -32.47951261484876,
+      "max_drawdown_R": 42.113673994070155,
+      "average_win_R": 1.553249348929327,
+      "average_loss_R": -0.9762911552027747,
+      "worst_R": -1.0500446827524736,
+      "max_consecutive_losses": 14,
+      "block_bootstrap_mean_CI95": [
+        -0.2816184055566863,
+        0.0018404601502204024
+      ],
+      "average_holding_hours": 14.835555555555555
+    }
+  ],
+  "OOS_evaluated": false
+}

@@ -1,0 +1,44 @@
+{
+  "models": [
+    "momentum_12",
+    "range_breakout_20",
+    "failed_breakout_20"
+  ],
+  "scenarios": [
+    {
+      "name": "observed_quotes",
+      "spread_multiplier": 1.0,
+      "slippage_points": 1,
+      "commission_USD_per_standard_lot_roundtrip": 1
+    },
+    {
+      "name": "stress_1_5",
+      "spread_multiplier": 1.5,
+      "slippage_points": 2,
+      "commission_USD_per_standard_lot_roundtrip": 7
+    },
+    {
+      "name": "stress_2",
+      "spread_multiplier": 2.0,
+      "slippage_points": 3,
+      "commission_USD_per_standard_lot_roundtrip": 7
+    }
+  ],
+  "signal": "exact formulas from Claude_initial_research.py; closed H1; next bar entry",
+  "SL_TP": "actual market fill anchored SMA TR14 * 1.5 stop; target 2 distances; unchanged strategy formula",
+  "eligibility": "one position; after tick exit, next signal candle is the following H1 bar, matching earlier engine indexing",
+  "holding": "24 H1 bars; split-end administrative flatten at last available pre-boundary quote",
+  "costs": "Bid/Ask included once. Spread stress widens Ask relative to unchanged Bid. Stop/market slippage adverse; TP ideal resting limit. Commission scenario is hypothetical, not actual tariff.",
+  "swap": "not modeled; positive results cannot qualify until swap/account commission verified",
+  "OOS_evaluated": false,
+  "splits": {
+    "symbol_tag": "EURUSD",
+    "n_bars_used_for_split": 24023,
+    "train_start": "2022-11-01 00:00:00",
+    "train_end": "2025-05-06 15:00:00",
+    "val_start": "2025-05-06 16:00:00",
+    "val_end": "2026-01-08 20:00:00",
+    "oos_start": "2026-01-08 21:00:00",
+    "oos_end": "2026-09-11 00:00:00"
+  }
+}
