@@ -7,6 +7,23 @@
 __pycache__/
 *.pyc
 *.pyo
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.venv*/
+
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+
+# Editors
+.vscode/
+.idea/
 
 # OS
 .DS_Store

@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from functools import lru_cache
 import numpy as np
-from Claude_tick_execution import replay,ReplayError
+from C_tick_execution import replay,ReplayError
 ROOT=Path(__file__).resolve().parents[1]; OUT=Path(__file__).resolve().parent
 DATA=ROOT/'raw_data/Claude_EURUSD_preOOS_ticks_02'
 B=json.loads((ROOT/'CRT_research/data/Claude_split_boundaries_EURUSD.json').read_text())
