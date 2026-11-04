@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from Claude_tick_execution import replay,ReplayError
+from C_tick_execution import replay,ReplayError
 
 def ticks(rows):
  return np.array(rows,dtype=[('time_msc','i8'),('bid','f8'),('ask','f8')])

@@ -1,0 +1,9 @@
+numpy==2.5.3
+
+# MetaTrader5's Python package only ships Windows binaries and talks to a
+# locally installed, already-logged-in MT5 terminal (no credentials in this
+# package). It is only needed to run the data-acquisition/live-probe scripts
+# in EURUSD_research/ (e.g. C_download_continuous_ticks.py, C_data_audit.py).
+# The unit tests do not import it, so it is skipped automatically on
+# non-Windows machines (including CI).
+MetaTrader5==5.0.6180; platform_system == "Windows"

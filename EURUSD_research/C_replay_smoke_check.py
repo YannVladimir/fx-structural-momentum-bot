@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import numpy as np
 from datetime import datetime,timezone
-from Claude_tick_execution import replay,daily_chunks
+from C_tick_execution import replay,daily_chunks
 ROOT=Path(__file__).resolve().parents[1]; OUT=Path(__file__).resolve().parent
 folder=ROOT/'raw_data/Claude_EURUSD_preOOS_ticks_02'
 bars=np.load(ROOT/'raw_data/Claude_EURUSD_20260930/H1.npy')
